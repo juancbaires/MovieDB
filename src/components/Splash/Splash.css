@@ -1,0 +1,44 @@
+/**
+ * Splash container background
+ */
+
+body {
+    margin: 0;
+    background-image: url('../Images/interstellar.jpg');
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85) 15%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 1) 90%);
+    height: 100vh;
+    position: absolute;
+}
+
+.container__overlay {
+    position: relative;
+    z-index: 20;
+    height: 20rem;
+    width: 60rem;
+}
+
+/**
+ * movie banner
+ */
+
+.movieBanner {
+    width: 80rem;
+}
+
+/**
+ * font-colors
+ */
+
+.color__green {
+    color: rgb(90, 240, 90);
+}
+
+.color__white {
+    color: white;
+}
