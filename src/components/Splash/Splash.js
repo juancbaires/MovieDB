@@ -15,19 +15,29 @@ class Splash extends Component {
     }
     render() {
         return (
-            <div className="container">
-                <div className="container__overlay">
-                    <section className="movieBanner"></section>
-                    <section className="movieInfo">
-                        <div className="movieInfo--description">
-                            <h1 className="color__white">{this.state.title}</h1>
-                            <h3 className="color__green">{this.state.quote}</h3>
-                            <p className="color__white">{this.state.summary}</p>
+            <div className='container--wrapper'>
+                <section className="wrapper">
+                    <div className='container'>
+                        <div className="container__search">search</div>
+                        <div className="container__body">
+                            <div className="container__banner">banner</div>
+                            <div className="container__info">
+                                <div className="info--top"><h1 className="info--white">
+                                    {this.state.title}
+                                </h1>
+                                    <p className="info--green">{this.state.quote}</p>
+                                    <p className="info--white">{this.state.summary}</p>
+                                </div>
+                                <div className="info--bottom">bottom</div>
+                            </div>
                         </div>
-                        <div className="movieInfo--description"></div>
-                        <div className="movieInfo--description"></div>
-                    </section>
-                </div>
+                    </div>
+                </section>
+                <footer>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </footer>
             </div>
         );
     }
